@@ -9,13 +9,7 @@ const AudioFile = sequelize.define("audio_file", {
     autoIncrement: true,
   },
 
-  artist: {
-    type: DataTypes.STRING,
-    unique: false,
-    allowNull: false,
-  },
-
-  title: {
+  name_of_song: {
     type: DataTypes.STRING,
     unique: false,
     allowNull: false,
@@ -32,6 +26,12 @@ const AudioFile = sequelize.define("audio_file", {
     autoIncrementIdentity: true,
     allowNull: true,
   },
+
+  format: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+
   updatedAt: {
     type: DataTypes.DATE,
     autoIncrementIdentity: true,

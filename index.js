@@ -4,7 +4,7 @@ const port = 8000;
 const homeRoute = require("./routes/home.routes");
 const sequelize = require("./db");
 const cors = require("cors");
-
+const AudioFile = require('./models/audio_file.model')
 
 app.use(cors());
 
