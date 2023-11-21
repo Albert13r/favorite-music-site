@@ -5,6 +5,29 @@
   box-sizing: border-box;
 }
 
+#list-of-songs {
+  margin-top: 3%;
+}
+#song {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#62b237, #32a072);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  width: 25%;
+}
+
 body {
   font-family: cursive;
 }
@@ -52,27 +75,36 @@ li {
   padding: 5px 14px;
 }
 
-button {
-  background-color: #36A9AE;
-  background-image: linear-gradient(#37ADB2, #329CA0);
-  border: 1px solid #2A8387;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
+#songs-header {
+  color: #0e0e0e;
   font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 17px;
-  line-height: 100%;
-  margin: 0;
-  outline: 0;
-  padding: 11px 15px 12px;
-  text-align: center;
-  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 5%;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 130px;
+  text-shadow: #329CA0 1px 0 10px;
+  
+}
+button {
+    background-color: #36A9AE;
+    background-image: linear-gradient(#37ADB2, #329CA0);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 11px 15px 12px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 5%;
 }
 
 button:hover {

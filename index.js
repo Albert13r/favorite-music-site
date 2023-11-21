@@ -3,13 +3,11 @@ const app = express();
 const port = 8000;
 const homeRoute = require("./routes/home.routes");
 const sequelize = require("./db");
-const cors = require("cors");
-const AudioFile = require('./models/audio_file.model')
 
-app.use(cors());
+app.set('view engine', 'ejs');
 
 app.use("/", homeRoute);
-app.use("/uploads",  homeRoute);
+app.use("/uploads", homeRoute);
 app.use(express.static("public"));
 
 app.listen(port, () => {
